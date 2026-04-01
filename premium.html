@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Plans – Bank Loan EMI Calculator</title>
+  <meta name="description"
+    content="Upgrade to Premium. Restore data, password protection, multi-device sync, unlimited loan entries and an ad-free experience." />
+  <meta name="keywords" content="loan EMI calculator premium, pro plan, sync loans, biometric lock, loan app upgrade" />
+  <link rel="icon" type="image/png" href="LOGO.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="LOGO.png" alt="Bank Loan EMI Calculator Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">EMI Calculator</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#features" class="nav-link">Features</a>
+        <a href="index.html#calculator" class="nav-link">Calculator</a>
+        <a href="index.html#benefits" class="nav-link">Benefits</a>
+        <a href="#pricing" class="nav-link nav-link-pro">✦ Premium</a>
+      </div>
+      <a href="#pricing" class="btn btn-sm btn-pro nav-cta" id="nav-cta-upgrade">Upgrade Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- mobile drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="index.html" class="drawer-link">← Back to Home</a>
+      <a href="#pricing" class="drawer-link">Pricing Plans</a>
+      <a href="#features-detail" class="drawer-link">Features</a>
+      <a href="#why-premium" class="drawer-link">Why Premium?</a>
+      <a href="#pricing" class="btn btn-pro drawer-cta">Upgrade Now</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="premium-page-hero" id="hero">
+    <div class="premium-hero-blob phb-1"></div>
+    <div class="premium-hero-blob phb-2"></div>
+    <div class="container reveal">
+      <div class="premium-hero-badge">
+        <span>✦</span> PREMIUM PLAN
+      </div>
+      <h1 class="premium-hero-title">
+        Go Premium.<br /><span class="accent-text">Stay in Control.</span>
+      </h1>
+      <p class="premium-hero-sub">
+        Secure, sync, and manage your loans without limits.<br />
+        Everything you need, nothing you don't.
+      </p>
+      <div class="premium-hero-actions">
+        <a href="#pricing" class="btn btn-pro btn-lg" id="hero-upgrade-btn">Upgrade Now</a>
+        <a href="index.html" class="btn btn-outline btn-lg" id="hero-back-btn">← Back to Home</a>
+      </div>
+
+      <!-- Quick trust row -->
+      <div class="premium-trust-row">
+        <span class="premium-trust-item"><span>🔒</span> Secure & Private</span>
+        <span class="premium-trust-sep">·</span>
+        <span class="premium-trust-item"><span>☁️</span> Data Restore</span>
+        <span class="premium-trust-sep">·</span>
+        <span class="premium-trust-item"><span>∞</span> Unlimited Loans</span>
+        <span class="premium-trust-sep">·</span>
+        <span class="premium-trust-item"><span>🔄</span> Multi-device Sync</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING CARDS ========== -->
+  <section class="pricing-section" id="pricing" style="padding-top:100px;">
+    <div class="pricing-bg">
+      <div class="pricing-blob pb-1"></div>
+      <div class="pricing-blob pb-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-label reveal center pro-label">Choose Your Plan</div>
+      <h2 class="section-title reveal center">Simple, transparent<br />pricing</h2>
+      <p class="section-sub reveal center">Pick what works for you. Upgrade, downgrade, or cancel anytime.</p>
+
+      <!-- Billing toggle -->
+      <!-- <div class="billing-toggle reveal" id="billing-toggle">
+        <button class="toggle-btn active" id="toggle-monthly" data-plan="monthly">Monthly</button>
+        <button class="toggle-btn" id="toggle-yearly" data-plan="yearly">
+          Yearly
+          <span class="toggle-save">Save 50%</span>
+        </button>
+      </div> -->
+
+      <!-- Pricing Cards -->
+      <div class="pricing-cards reveal" id="pricing-cards">
+
+        <!-- Monthly -->
+        <div class="pricing-card" id="plan-monthly">
+          <div class="plan-icon">📅</div>
+          <div class="plan-name">Monthly</div>
+          <div class="plan-price">
+            <span class="plan-currency">₹</span>149
+            <span class="plan-period"> / month</span>
+          </div>
+          <p class="plan-desc">Flexible access. Pay month to month, cancel at any time.</p>
+          <ul class="plan-features">
+            <li><span class="pf-check">✓</span> Restore data across devices</li>
+            <li><span class="pf-check">✓</span> Password &amp; Face ID protection</li>
+            <li><span class="pf-check">✓</span> Sync across multiple devices</li>
+            <li><span class="pf-check">✓</span> Unlimited loan entries</li>
+            <li><span class="pf-check">✓</span> Ad-free experience</li>
+            <li><span class="pf-check">✓</span> Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-plan" id="cta-monthly-page">Get Monthly</a>
+        </div>
+
+        <!-- Yearly — BEST VALUE -->
+        <div class="pricing-card pricing-card-featured" id="plan-yearly">
+          <div class="plan-badge">⭐ Best Value</div>
+          <div class="plan-icon">🗓️</div>
+          <div class="plan-name">Yearly</div>
+          <div class="plan-price">
+            <span class="plan-currency">₹</span>899
+            <span class="plan-period"> / year</span>
+          </div>
+          <p class="plan-desc">Best value. Over 50% savings compared to monthly billing.</p>
+          <ul class="plan-features">
+            <li><span class="pf-check">✓</span> Restore data across devices</li>
+            <li><span class="pf-check">✓</span> Password &amp; Face ID protection</li>
+            <li><span class="pf-check">✓</span> Sync across multiple devices</li>
+            <li><span class="pf-check">✓</span> Unlimited loan entries</li>
+            <li><span class="pf-check">✓</span> Ad-free experience</li>
+            <li><span class="pf-check">✓</span> Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-plan" id="cta-yearly-page">Get Yearly</a>
+          <div class="plan-saving">You save ₹889 per year</div>
+        </div>
+
+        <!-- Lifetime -->
+        <div class="pricing-card pricing-card-lifetime" id="plan-lifetime">
+          <div class="plan-badge plan-badge-alt">♾️ One-time Access</div>
+          <div class="plan-icon">🔮</div>
+          <div class="plan-name">Lifetime</div>
+          <div class="plan-price">
+            <span class="plan-currency">₹</span>999
+            <span class="plan-period"> once</span>
+          </div>
+          <p class="plan-desc">Pay once. Own it forever. Never pay again.</p>
+          <ul class="plan-features">
+            <li><span class="pf-check">✓</span> Restore data across devices</li>
+            <li><span class="pf-check">✓</span> Password &amp; Face ID protection</li>
+            <li><span class="pf-check">✓</span> Sync across multiple devices</li>
+            <li><span class="pf-check">✓</span> Unlimited loan entries</li>
+            <li><span class="pf-check">✓</span> Ad-free experience</li>
+            <li><span class="pf-check">✓</span> Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-plan" id="cta-lifetime-page">Get Lifetime</a>
+        </div>
+
+      </div><!-- /pricing-cards -->
+
+      <!-- Reassurance line -->
+      <p class="pricing-reassurance reveal">
+        🔒 Secure payment &nbsp;·&nbsp; Cancel anytime &nbsp;·&nbsp; No hidden fees
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES EXPLAINED ========== -->
+  <section class="prem-features-section" id="features-detail">
+    <div class="container">
+      <div class="section-label reveal center pro-label">What You Get</div>
+      <h2 class="section-title reveal center">Every Premium benefit,<br />explained</h2>
+
+      <div class="prem-features-grid reveal">
+
+        <!-- Data Safety -->
+        <div class="prem-feature-cat" id="pfc-data">
+          <div class="pfc-icon">☁️</div>
+          <h3>Data Safety</h3>
+          <div class="pfc-items">
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Restore your complete loan history when switching devices
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              All data encrypted and stored securely in local storage
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Automated backup — never lose your data again
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Works even when offline — your data is always with you
+            </div>
+          </div>
+        </div>
+
+        <!-- Security -->
+        <div class="prem-feature-cat" id="pfc-security">
+          <div class="pfc-icon">🔐</div>
+          <h3>Security</h3>
+          <div class="pfc-items">
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Set a PIN or password to protect your loan data
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Face ID &amp; fingerprint (biometric) unlock support
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Auto-lock after inactivity for extra peace of mind
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Your data never leaves your device without your consent
+            </div>
+          </div>
+        </div>
+
+        <!-- Sync -->
+        <div class="prem-feature-cat" id="pfc-sync">
+          <div class="pfc-icon">🔄</div>
+          <h3>Multi-Device Sync</h3>
+          <div class="pfc-items">
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Access your loans seamlessly on phone, tablet, or any device
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Instant sync — changes reflect across all devices
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Conflict-free sync with smart merge technology
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Works even if you change or upgrade your phone
+            </div>
+          </div>
+        </div>
+
+        <!-- Unlimited Usage -->
+        <div class="prem-feature-cat" id="pfc-unlimited">
+          <div class="pfc-icon">∞</div>
+          <h3>Unlimited Usage</h3>
+          <div class="pfc-items">
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Add unlimited loans — home, car, personal, business
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Full payment history for every loan, no limits
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Track active, completed, and upcoming loans together
+            </div>
+            <div class="pfc-item">
+              <span class="pfc-dot"></span>
+              Ad-free, distraction-free interface throughout
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMPARISON TABLE ========== -->
+  <section class="comparison-section" id="comparison">
+    <div class="container">
+      <div class="section-label reveal center">Free vs Premium</div>
+      <h2 class="section-title reveal center">See the difference</h2>
+      <div class="comparison-table reveal">
+        <div class="comp-header">
+          <div class="comp-feat-col">Feature</div>
+          <div class="comp-plan-col">Free</div>
+          <div class="comp-plan-col comp-plan-pro">Premium ✦</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feat">EMI & Loan Calculator</div>
+          <div class="comp-val comp-yes">✓</div>
+          <div class="comp-val comp-yes comp-pro-val">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feat">Repayment Schedule</div>
+          <div class="comp-val comp-yes">✓</div>
+          <div class="comp-val comp-yes comp-pro-val">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feat">Multiple Loans</div>
+          <div class="comp-val comp-limited">Limited</div>
+          <div class="comp-val comp-yes comp-pro-val">Unlimited</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feat">Works Offline</div>
+          <div class="comp-val comp-yes">✓</div>
+          <div class="comp-val comp-yes comp-pro-val">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feat">Data Restore &amp; Backup</div>
+          <div class="comp-val comp-no">—</div>
+          <div class="comp-val comp-yes comp-pro-val">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feat">Password &amp; Face ID</div>
+          <div class="comp-val comp-no">—</div>
+          <div class="comp-val comp-yes comp-pro-val">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feat">Multi-Device Sync</div>
+          <div class="comp-val comp-no">—</div>
+          <div class="comp-val comp-yes comp-pro-val">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feat">Ad-Free Experience</div>
+          <div class="comp-val comp-no">—</div>
+          <div class="comp-val comp-yes comp-pro-val">✓</div>
+        </div>
+        <div class="comp-row">
+          <div class="comp-feat">Priority Support</div>
+          <div class="comp-val comp-no">—</div>
+          <div class="comp-val comp-yes comp-pro-val">✓</div>
+        </div>
+        <div class="comp-footer">
+          <div></div>
+          <div></div>
+          <div>
+            <a href="#pricing" class="btn btn-pro btn-sm" id="comp-upgrade-btn">Upgrade Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY PREMIUM ========== -->
+  <section class="why-premium" id="why-premium">
+    <div class="container">
+      <div class="section-label reveal center pro-label">Why Go Premium?</div>
+      <h2 class="section-title reveal center">Built for people who<br />take loans seriously</h2>
+      <div class="why-premium-grid reveal">
+        <div class="why-card" id="why-1">
+          <div class="why-icon">🛡️</div>
+          <div>
+            <strong>Never lose your data</strong>
+            <span>Restore your complete loan history no matter what happens to your device.</span>
+          </div>
+        </div>
+        <div class="why-card" id="why-2">
+          <div class="why-icon">🔒</div>
+          <div>
+            <strong>Stay secure and private</strong>
+            <span>Biometric lock and password protection keep your financial data yours alone.</span>
+          </div>
+        </div>
+        <div class="why-card" id="why-3">
+          <div class="why-icon">♾️</div>
+          <div>
+            <strong>Manage unlimited loans</strong>
+            <span>No caps. Add as many home, car, personal, or business loans as you need.</span>
+          </div>
+        </div>
+        <div class="why-card" id="why-4">
+          <div class="why-icon">📱</div>
+          <div>
+            <strong>Access across all devices</strong>
+            <span>Seamless sync keeps you up to date whether on phone, tablet, or a new device.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-label reveal center">FAQ</div>
+      <h2 class="section-title reveal center">Common questions</h2>
+      <div class="faq-list reveal">
+
+        <div class="faq-item" id="faq-1">
+          <button class="faq-q" aria-expanded="false">
+            Can I cancel my subscription anytime?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-a">
+            Yes. Monthly and yearly plans can be cancelled anytime. Your premium access continues until the end of your
+            current billing period.
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-2">
+          <button class="faq-q" aria-expanded="false">
+            What happens to my data if I cancel?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-a">
+            Your data stays on your device. You will lose access to sync and backup, but all your local loans remain
+            fully accessible.
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-3">
+          <button class="faq-q" aria-expanded="false">
+            Is Lifetime really a one-time payment?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-a">
+            Absolutely. Pay ₹999 once and get full access to all Premium features forever — including all future updates
+            at no extra cost.
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-4">
+          <button class="faq-q" aria-expanded="false">
+            How does multi-device sync work?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-a">
+            After upgrading, your loan data is securely synced across any device where you sign in with the same
+            account. Changes reflect instantly.
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-5">
+          <button class="faq-q" aria-expanded="false">
+            Is my payment and data secure?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-a">
+            Yes. All payments are processed through secure, industry-standard gateways. Your loan data is stored locally
+            on your device and never shared with third parties.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="premium-final-cta" id="final-cta">
+    <div class="cta-bg-blobs">
+      <div class="blob cta-blob-1"></div>
+      <div class="blob cta-blob-2"></div>
+    </div>
+    <div class="container cta-inner reveal">
+      <img src="LOGO.png" alt="App Logo" class="cta-logo" />
+      <h2 class="cta-headline">Upgrade now.<br />Start Premium today.</h2>
+      <p class="cta-sub">Join users who manage their loans with complete clarity and control.</p>
+      <div class="cta-actions">
+        <a href="#pricing" class="btn btn-primary btn-lg" id="final-cta-btn">Choose Your Plan</a>
+        <a href="index.html" class="btn btn-outline btn-lg btn-outline-white" id="final-back-btn">← Back to Home</a>
+      </div>
+      <div class="trust-badges">
+        <span class="trust-badge"><span>🔒</span> Secure Payment</span>
+        <span class="trust-badge"><span>♾️</span> Lifetime Option</span>
+        <span class="trust-badge"><span>🚫</span> No Hidden Fees</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="LOGO.png" alt="Logo" class="footer-logo" />
+        <span>EMI Calculator</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Bank Loan EMI Calculator. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="premium.html" class="footer-link footer-link-pro">✦ Premium</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // ---- FAQ Accordion ----
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const answer = item.querySelector('.faq-a');
+        const isOpen = item.classList.contains('faq-open');
+
+        // close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('faq-open');
+          i.querySelector('.faq-a').style.maxHeight = '0';
+          i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-arrow').style.transform = '';
+        });
+
+        // open clicked if it was closed
+        if (!isOpen) {
+          item.classList.add('faq-open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          btn.setAttribute('aria-expanded', 'true');
+          btn.querySelector('.faq-arrow').style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // ---- Billing Toggle ----
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        toggleBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // ---- Smooth scroll on hero CTA ----
+    document.querySelectorAll('a[href="#pricing"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+
+</html>

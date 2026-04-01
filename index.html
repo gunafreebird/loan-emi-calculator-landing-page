@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bank Loan EMI Calculator – Understand Your Loans Clearly</title>
+  <meta name="description"
+    content="A simple, private, and powerful way to calculate, track, and manage your loans. No accounts needed. Works offline." />
+  <meta name="keywords" content="loan EMI calculator, loan tracker, repayment schedule, loan management app" />
+  <link rel="icon" type="image/png" href="LOGO.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <img src="LOGO.png" alt="Bank Loan EMI Calculator Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">EMI Calculator</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#benefits" class="nav-link">Benefits</a>
+        <a href="#pricing" class="nav-link nav-link-pro">✦ Premium</a>
+      </div>
+      <a href="premium.html" class="btn btn-sm btn-pro nav-cta" id="nav-cta">Upgrade to Pro</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- mobile drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="#features" class="drawer-link">Features</a>
+      <a href="#calculator" class="drawer-link">Calculator</a>
+      <a href="#schedule" class="drawer-link">Schedule</a>
+      <a href="#benefits" class="drawer-link">Benefits</a>
+      <a href="#pricing" class="drawer-link">✦ Premium Plans</a>
+      <a href="premium.html" class="btn btn-pro drawer-cta">Upgrade to Pro</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content reveal">
+        <div class="hero-logo-wrap">
+          <img src="LOGO.png" alt="App Logo" class="hero-logo" />
+        </div>
+        <div class="trust-badge-top">
+          <span class="shield-icon">🔒</span>
+          <span>Completely Private &amp; Secure</span>
+        </div>
+        <h1 class="hero-headline">Understand Your<br /><span class="accent-text">Loans Clearly</span></h1>
+        <p class="hero-tagline">Calculate &bull; Track &bull; Manage</p>
+        <p class="hero-sub">A simple, private, and powerful way<br class="br-hide" /> to manage your loans.</p>
+        <div class="hero-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.freebird.emicalculator"
+            class="btn btn-primary btn-lg" target="_blank" id="hero-android">Download for Android</a>
+          <button class="btn btn-outline btn-lg btn-disabled" disabled>
+            Download for iOS
+            <span class="badge-inline">Coming Soon</span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-mockup reveal reveal-delay-1">
+        <div class="phone-mockup float-anim">
+          <div class="phone-screen">
+            <img src="1.jpeg" alt="Welcome screen of EMI Calculator app" class="phone-img" />
+          </div>
+        </div>
+        <div class="mockup-glow"></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span class="scroll-dot"></span>
+    </div>
+  </section>
+
+  <!-- ========== PROBLEM ========== -->
+  <section class="problem" id="problem">
+    <div class="container">
+      <div class="section-label reveal">The Problem</div>
+      <h2 class="section-title reveal">Loans shouldn't<br />be confusing</h2>
+      <div class="problem-grid reveal">
+        <div class="problem-card" id="prob-1">
+          <div class="problem-icon">💸</div>
+          <p>Unclear total cost</p>
+        </div>
+        <div class="problem-card" id="prob-2">
+          <div class="problem-icon">📉</div>
+          <p>No repayment tracking</p>
+        </div>
+        <div class="problem-card" id="prob-3">
+          <div class="problem-icon">📅</div>
+          <p>Missed due dates</p>
+        </div>
+        <div class="problem-card" id="prob-4">
+          <div class="problem-icon">🔍</div>
+          <p>No visibility into interest</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GETTING STARTED ========== -->
+  <section class="getting-started" id="features">
+    <div class="container split-layout">
+      <div class="split-mockup reveal">
+        <div class="phone-mockup phone-sm float-anim float-anim-slow">
+          <div class="phone-screen">
+            <img src="2.jpeg" alt="Empty state screen – start fresh" class="phone-img" />
+          </div>
+        </div>
+      </div>
+      <div class="split-content reveal reveal-delay-1">
+        <div class="section-label">Getting Started</div>
+        <h2 class="section-title">Start in seconds</h2>
+        <p class="section-sub">No accounts. No complexity.<br />Just open and begin.</p>
+        <ul class="feature-list">
+          <li class="feature-item" id="feat-guest">
+            <span class="feat-icon">👋</span>
+            <div>
+              <strong>Guest-first experience</strong>
+              <span>Start using immediately, zero setup</span>
+            </div>
+          </li>
+          <li class="feature-item" id="feat-nologin">
+            <span class="feat-icon">🚫</span>
+            <div>
+              <strong>No login required</strong>
+              <span>Your privacy is fully respected</span>
+            </div>
+          </li>
+          <li class="feature-item" id="feat-instant">
+            <span class="feat-icon">⚡</span>
+            <div>
+              <strong>Instant usage</strong>
+              <span>Ready to calculate from the first second</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SMART CALCULATOR ========== -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="section-label reveal center">Calculator</div>
+      <h2 class="section-title reveal center">Powerful Loan Calculator</h2>
+      <p class="section-sub reveal center">Get accurate EMI calculations with full transparency</p>
+
+      <div class="dual-mockup-wrap reveal">
+        <div class="phone-mockup phone-left float-anim">
+          <div class="phone-screen">
+            <img src="3.png" alt="Loan input form screen" class="phone-img" />
+          </div>
+        </div>
+        <div class="dual-features">
+          <div class="feature-pill" id="calc-feat-1">EMI or Loan-based calculation</div>
+          <div class="feature-pill" id="calc-feat-2">Annuity &amp; Differentiated methods</div>
+          <div class="feature-pill" id="calc-feat-3">Processing fee inclusion</div>
+          <div class="feature-pill" id="calc-feat-4">First EMI from disbursement date</div>
+          <div class="feature-pill" id="calc-feat-5">Multi-currency support</div>
+        </div>
+        <div class="phone-mockup phone-right float-anim float-anim-slow">
+          <div class="phone-screen">
+            <img src="4.png" alt="Loan calculation result screen" class="phone-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRACK & ANALYZE ========== -->
+  <section class="track-section" id="track">
+    <div class="container split-layout split-reverse">
+      <div class="split-content reveal">
+        <div class="section-label">Track &amp; Analyze</div>
+        <h2 class="section-title">Track Every Detail</h2>
+        <p class="section-sub">Know exactly where your money goes</p>
+        <ul class="feature-list">
+          <li class="feature-item" id="track-feat-1">
+            <span class="feat-icon">📊</span>
+            <div><strong>Repayment Progress</strong><span>Visual tracking of your loan journey</span></div>
+          </li>
+          <li class="feature-item" id="track-feat-2">
+            <span class="feat-icon">💰</span>
+            <div><strong>Remaining Balance</strong><span>Always know what's left to pay</span></div>
+          </li>
+          <li class="feature-item" id="track-feat-3">
+            <span class="feat-icon">📈</span>
+            <div><strong>Interest vs Principal</strong><span>Clear breakdown every month</span></div>
+          </li>
+          <li class="feature-item" id="track-feat-4">
+            <span class="feat-icon">🔔</span>
+            <div><strong>Next Payment Reminders</strong><span>Never miss a due date again</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="split-mockup reveal reveal-delay-1">
+        <div class="phone-mockup phone-sm float-anim">
+          <div class="phone-screen">
+            <img src="5.jpeg" alt="Loan details dashboard screen" class="phone-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REPAYMENT SCHEDULE ========== -->
+  <section class="schedule-section" id="schedule">
+    <div class="container split-layout">
+      <div class="split-mockup reveal">
+        <div class="phone-mockup phone-sm float-anim float-anim-slow">
+          <div class="phone-screen">
+            <img src="6.jpeg" alt="Repayment schedule screen" class="phone-img" />
+          </div>
+        </div>
+      </div>
+      <div class="split-content reveal reveal-delay-1">
+        <div class="section-label">Repayment Schedule</div>
+        <h2 class="section-title">Full Repayment Visibility</h2>
+        <p class="section-sub">Every EMI, clearly broken down</p>
+        <ul class="feature-list">
+          <li class="feature-item" id="sched-feat-1">
+            <span class="feat-icon">🗓️</span>
+            <div><strong>Monthly Schedule</strong><span>Every payment, every month</span></div>
+          </li>
+          <li class="feature-item" id="sched-feat-2">
+            <span class="feat-icon">⚖️</span>
+            <div><strong>Interest vs Principal Split</strong><span>Understand what you're paying</span></div>
+          </li>
+          <li class="feature-item" id="sched-feat-3">
+            <span class="feat-icon">📉</span>
+            <div><strong>Remaining Balance</strong><span>After each payment, clearly shown</span></div>
+          </li>
+          <li class="feature-item" id="sched-feat-4">
+            <span class="feat-icon">⏱️</span>
+            <div><strong>Clear Timeline</strong><span>Your full loan life at a glance</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MULTI-LOAN MANAGEMENT ========== -->
+  <section class="multiloan-section" id="multiloan">
+    <div class="container split-layout split-reverse">
+      <div class="split-content reveal">
+        <div class="section-label">Multi-Loan</div>
+        <h2 class="section-title">Manage All Your Loans<br />in One Place</h2>
+        <p class="section-sub">Stay organized, no matter how many loans you have</p>
+        <ul class="feature-list">
+          <li class="feature-item" id="multi-feat-1">
+            <span class="feat-icon">🏦</span>
+            <div><strong>Total Debt Overview</strong><span>See the full picture at once</span></div>
+          </li>
+          <li class="feature-item" id="multi-feat-2">
+            <span class="feat-icon">✅</span>
+            <div><strong>Active &amp; Completed Loans</strong><span>Track every loan's status</span></div>
+          </li>
+          <li class="feature-item" id="multi-feat-3">
+            <span class="feat-icon">📋</span>
+            <div><strong>Multi-loan Tracking</strong><span>No loan goes unnoticed</span></div>
+          </li>
+          <li class="feature-item" id="multi-feat-4">
+            <span class="feat-icon">🗂️</span>
+            <div><strong>Clean Dashboard</strong><span>Organized, beautiful, simple</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="split-mockup reveal reveal-delay-1">
+        <div class="phone-mockup phone-sm float-anim">
+          <div class="phone-screen">
+            <img src="7.jpeg" alt="Multi-loan home screen" class="phone-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VALUE / BENEFITS ========== -->
+  <section class="benefits-section" id="benefits">
+    <div class="container">
+      <div class="section-label reveal center">Why EMI Calculator</div>
+      <h2 class="section-title reveal center">Built for clarity<br />and control</h2>
+      <div class="benefits-grid reveal">
+        <div class="benefit-card" id="ben-1">
+          <div class="benefit-icon">💡</div>
+          <h3>True Cost Understanding</h3>
+          <p>Know the real total cost of every loan before and after signing</p>
+        </div>
+        <div class="benefit-card" id="ben-2">
+          <div class="benefit-icon">🔄</div>
+          <h3>Effortless Tracking</h3>
+          <p>Track repayments without spreadsheets or mental math</p>
+        </div>
+        <div class="benefit-card" id="ben-3">
+          <div class="benefit-icon">⏰</div>
+          <h3>Never Miss Payments</h3>
+          <p>Smart reminders keep you on top of every due date</p>
+        </div>
+        <div class="benefit-card" id="ben-4">
+          <div class="benefit-icon">💎</div>
+          <h3>Early Repayment Savings</h3>
+          <p>See exactly how much you save by paying early</p>
+        </div>
+        <div class="benefit-card" id="ben-5">
+          <div class="benefit-icon">📶</div>
+          <h3>Works Offline</h3>
+          <p>Full functionality without internet — anytime, anywhere</p>
+        </div>
+        <div class="benefit-card" id="ben-6">
+          <div class="benefit-icon">🔒</div>
+          <h3>Privacy First</h3>
+          <p>All data stored locally on your device — never shared</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PREMIUM / PRICING ========== -->
+  <section class="pricing-section" id="pricing">
+    <div class="pricing-bg">
+      <div class="pricing-blob pb-1"></div>
+      <div class="pricing-blob pb-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-label reveal center pro-label">Premium Plans</div>
+      <h2 class="section-title reveal center">Upgrade to <span class="accent-text">Premium</span></h2>
+      <p class="section-sub reveal center">Unlock powerful features for better control and security</p>
+
+      <!-- Pricing Cards -->
+      <div class="pricing-cards reveal">
+
+        <!-- Monthly -->
+        <div class="pricing-card" id="plan-monthly">
+          <div class="plan-icon">📅</div>
+          <div class="plan-name">Monthly</div>
+          <div class="plan-price"><span class="plan-currency">₹</span>149<span class="plan-period"> / month</span></div>
+          <p class="plan-desc">Flexible monthly access. Cancel anytime.</p>
+          <ul class="plan-features">
+            <li><span class="pf-check">✓</span> Data restore & backup</li>
+            <li><span class="pf-check">✓</span> Password & Face ID lock</li>
+            <li><span class="pf-check">✓</span> Multi-device sync</li>
+            <li><span class="pf-check">✓</span> Unlimited loan entries</li>
+            <li><span class="pf-check">✓</span> Ad-free experience</li>
+          </ul>
+          <a href="premium.html#plan-monthly" class="btn btn-outline btn-plan" id="cta-monthly">Get Monthly</a>
+        </div>
+
+        <!-- Yearly — BEST VALUE -->
+        <div class="pricing-card pricing-card-featured" id="plan-yearly">
+          <div class="plan-badge">⭐ Best Value</div>
+          <div class="plan-icon">🗓️</div>
+          <div class="plan-name">Yearly</div>
+          <div class="plan-price"><span class="plan-currency">₹</span>899<span class="plan-period"> / year</span></div>
+          <p class="plan-desc">Best value. Save over 50% vs monthly.</p>
+          <ul class="plan-features">
+            <li><span class="pf-check">✓</span> Data restore & backup</li>
+            <li><span class="pf-check">✓</span> Password & Face ID lock</li>
+            <li><span class="pf-check">✓</span> Multi-device sync</li>
+            <li><span class="pf-check">✓</span> Unlimited loan entries</li>
+            <li><span class="pf-check">✓</span> Ad-free experience</li>
+          </ul>
+          <a href="premium.html#plan-yearly" class="btn btn-primary btn-plan" id="cta-yearly">Get Yearly</a>
+          <div class="plan-saving">You save ₹889 / year</div>
+        </div>
+
+        <!-- Lifetime -->
+        <div class="pricing-card pricing-card-lifetime" id="plan-lifetime">
+          <div class="plan-badge plan-badge-alt">♾️ One-time Access</div>
+          <div class="plan-icon">🔮</div>
+          <div class="plan-name">Lifetime</div>
+          <div class="plan-price"><span class="plan-currency">₹</span>999<span class="plan-period"> once</span></div>
+          <p class="plan-desc">Pay once. Own it forever.</p>
+          <ul class="plan-features">
+            <li><span class="pf-check">✓</span> Data restore & backup</li>
+            <li><span class="pf-check">✓</span> Password & Face ID lock</li>
+            <li><span class="pf-check">✓</span> Multi-device sync</li>
+            <li><span class="pf-check">✓</span> Unlimited loan entries</li>
+            <li><span class="pf-check">✓</span> Ad-free experience</li>
+          </ul>
+          <a href="premium.html#plan-lifetime" class="btn btn-outline btn-plan" id="cta-lifetime">Get Lifetime</a>
+        </div>
+
+      </div><!-- /pricing-cards -->
+
+      <!-- Premium feature highlights -->
+      <div class="premium-features reveal">
+        <div class="premium-feat-item" id="pfeat-1">
+          <span class="pf-icon">☁️</span>
+          <div><strong>Restore anytime</strong><span>Switch device without losing a thing</span></div>
+        </div>
+        <div class="premium-feat-item" id="pfeat-2">
+          <span class="pf-icon">🔐</span>
+          <div><strong>Password & Face ID</strong><span>Your data, locked tight</span></div>
+        </div>
+        <div class="premium-feat-item" id="pfeat-3">
+          <span class="pf-icon">🔄</span>
+          <div><strong>Multi-device sync</strong><span>Seamless across all your devices</span></div>
+        </div>
+        <div class="premium-feat-item" id="pfeat-4">
+          <span class="pf-icon">∞</span>
+          <div><strong>Unlimited loans</strong><span>No caps, no limits, ever</span></div>
+        </div>
+        <div class="premium-feat-item" id="pfeat-5">
+          <span class="pf-icon">🚫</span>
+          <div><strong>Ad-free</strong><span>Clean, distraction-free experience</span></div>
+        </div>
+      </div>
+
+      <div class="pricing-learn-more reveal">
+        <a href="premium.html" class="btn btn-outline" id="pricing-learn-more-btn">See Full Premium Details →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <section class="final-cta" id="cta">
+    <div class="cta-bg-blobs">
+      <div class="blob cta-blob-1"></div>
+      <div class="blob cta-blob-2"></div>
+    </div>
+    <div class="container cta-inner reveal">
+      <img src="LOGO.png" alt="App Logo" class="cta-logo" />
+      <h2 class="cta-headline">Take control of your<br />loans today</h2>
+      <p class="cta-sub">Free. Private. Powerful. No account needed.</p>
+      <div class="cta-actions">
+        <a href="https://play.google.com/store/apps/details?id=com.freebird.emicalculator"
+          class="btn btn-primary btn-lg" target="_blank" id="cta-android">Download for Android</a>
+        <button class="btn btn-outline btn-lg btn-outline-white btn-disabled" disabled>
+          Download for iOS
+          <span class="badge-inline">Coming Soon</span>
+        </button>
+      </div>
+      <div class="trust-badges">
+        <span class="trust-badge" id="badge-private"><span>🔒</span> Private &amp; Secure</span>
+        <span class="trust-badge" id="badge-offline"><span>📶</span> Works Offline</span>
+        <span class="trust-badge" id="badge-free"><span>🎁</span> Completely Free</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="LOGO.png" alt="Logo" class="footer-logo" />
+        <span>EMI Calculator</span>
+      </div>
+      <p class="footer-copy">&copy; 2026 Bank Loan EMI Calculator. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="premium.html" class="footer-link footer-link-pro">✦ Premium</a>
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Use</a>
+        <a href="#" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
