@@ -1273,6 +1273,114 @@ button {
   border: 1px solid rgba(62, 207, 126, 0.25);
 }
 
+/* ---- Free vs Pro Comparison Layout ---- */
+.plan-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 960px;
+  margin: 40px auto 60px;
+}
+
+.comp-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 42px;
+  position: relative;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.comp-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.comp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.comp-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1rem;
+  color: var(--text-body);
+  font-weight: 500;
+}
+
+.comp-list .check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: var(--green-light);
+  color: var(--green-dark);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.comp-list .dash {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--text-muted);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+#comp-pro {
+  border-color: rgba(62, 207, 126, 0.35);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 253, 244, 0.8) 100%);
+  box-shadow: 0 12px 40px rgba(62, 207, 126, 0.12);
+}
+
+#comp-free {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.pro-tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--green-dark);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 50px;
+  letter-spacing: 0.08em;
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.25);
+}
+
+@media (max-width: 800px) {
+  .plan-comparison {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 480px;
+  }
+  
+  .comp-card {
+    padding: 32px;
+  }
+}
+
 /* ---- Pricing Cards Grid ---- */
 .pricing-cards {
   display: grid;
